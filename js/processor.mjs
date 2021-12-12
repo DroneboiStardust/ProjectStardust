@@ -1,7 +1,7 @@
 var d = {
 	head: {
-		main: /(Player)?Vehicle;\d+~\d+;\d+\|\d+\|/,
-		pos: s=>s.match(/\d+~\d+/)[0].split(`~`),
+		main: /(Player)?Vehicle;(\-)\d+~(\-)\d+;\d+\|\d+\|/,
+		pos: s=>s.match(/(\-)\d+~(\-)\d+/)[0].split(`~`),
 		r: s=>s.split(`;`)[2].match(/^\d+/)[0],
 	},
 	body: {
