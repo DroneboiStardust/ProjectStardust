@@ -84,13 +84,14 @@ Then all the sections after that are blocks, step 1: dissect a block
 ### Station keys (CONCEPT)<a name="_s_key"></a>
 Now that you have finished reading about the keyediting basics, let's move forward to a custom type of key, station keys. 🙂
 
-
+<a name="_s_key_info"></a>
 Stations are anchored invincible vehicles that can only be controlled via animations.
 
 Stations cannot move, but thrusters and momentum wheels can still be activated (still no movement).
 Stations cannot be damaged.
 Stations can be animated using an animation system.
 
+<a name="_s_key_conecpt"></a>
 Here is a concept of a **station key**:
    ```
    StardustStation;<posX>~<posY>;<r>|<Image IDs>|<Blocks>(|<Animation>)
@@ -98,6 +99,6 @@ Here is a concept of a **station key**:
  
  There are 4 sections in a station key, seperated by a veritical bar character `|`
  
- `StardustStation;<posX>~<posY>;<r>` The first section is the header.
+ `StardustStation;<posX>~<posY>;<r>` The first section is the header. <a name="_s_key_header"></a>
  It contains the spawn position and rotaion of the station, the parameters are exactly the same as normal keys.
   
