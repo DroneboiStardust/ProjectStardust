@@ -85,20 +85,25 @@ Then all the sections after that are blocks, step 1: dissect a block
 Now that you have finished reading about the keyediting basics, let's move forward to a custom type of key, station keys. 🙂
 
 <a name="_s_key_info"></a>
-Stations are anchored invincible vehicles that can only be controlled via animations.
+Stations are anchored invincible vehicles that can only be controlled via animations.<br>
 
-Stations cannot move, but thrusters and momentum wheels can still be activated (still no movement).
-Stations cannot be damaged.
+Stations cannot move, but thrusters and momentum wheels can still be activated (still no movement).<br>
+Stations cannot be damaged.<br>
 Stations can be animated using an animation system.
 
 <a name="_s_key_conecpt"></a>
 Here is a concept of a **station key**:
    ```
-   StardustStation;<posX>~<posY>;<r>|<Image IDs>|<Blocks>(|<Animation>)
+   StardustStation;<posX>~<posY>;<r>;<useImage>;<useAnimation>|(<Image IDs>|)<Blocks>(|<Animation>)
    ```
  
- There are 4 sections in a station key, seperated by a veritical bar character `|`
+ There are 4 sections in a station key (2 are optional), seperated by a veritical bar character `|`
  
- `StardustStation;<posX>~<posY>;<r>` The first section is the header. <a name="_s_key_header"></a>
- It contains the spawn position and rotaion of the station, the parameters are exactly the same as normal keys.
-  
+ `StardustStation;<posX>~<posY>;<r>` The first section is the header. <a name="_s_key_header"></a><br>
+ It contains the spawn position and rotaion of the station, the parameters are almost exactly the same as normal keys.<br>
+ It has 2 extra parameters for enabling the <Image IDs> and <Animation> sections. (Value is 1 or 0)<br>
+   
+   
+ **Section 2: Image IDs**
+ This section is optional according to the header
+ 
