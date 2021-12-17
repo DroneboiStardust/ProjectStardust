@@ -132,8 +132,8 @@ About PPU: [^PPU]
       
 **Section 3: Blocks**
 Block in station keys compared to [normal vehicle keys](#_d_og_block) are similar, yet very different.<br>
-      <pre><code>Core;&lt;posX&gt;~&lt;posY&gt;;<a href="#_d_og_block:paint">&lt;Paint&gt;]</a>(;&lt;Image ID&gt;;&lt;Control ID&gt;;&lt;Animation ID&gt;):</code></pre>
-
+      <pre><code>Core;&lt;posX&gt;~&lt;posY&gt;;&lt;Paint&gt;(;&lt;Image ID&gt;;&lt;Control ID&gt;;&lt;Animation ID&gt;):</code></pre>
+Links: [posX/Y](#_d_og_block:pos) [Paint](#_d_og_block:paint)
     WIP...
 
 [^PPU]: PPU is Pixels Per Unit, ingame, a unit is usually a block, a 1x1 block is 16x16 pixels.
