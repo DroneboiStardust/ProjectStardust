@@ -126,7 +126,8 @@ Now with placeholders:
    <string URL>,
    <number PPU>
 ]
-```[^PPU]
+```
+[^PPU]
 
 [^PPU]: PPU is Pixels Per Unit, ingame, a unit is usually a block, a 1x1 block is 16x16 pixels.
       If you want to fit a 512x512 image in one block, set the PPU to 512.
