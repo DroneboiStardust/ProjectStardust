@@ -99,7 +99,8 @@ Here is a concept of a **station key**:
  
  There are 4 sections in a station key (2 are optional), seperated by a veritical bar character `|`
  
- `StardustStation;<posX>~<posY>;<r>` The first section is the header. <a name="_s_key_header"></a><br>
+ `StardustStation;V1;<posX>~<posY>;<r>` The first section is the header. <a name="_s_key_header"></a><br>
+ At the start it indicates the key version.<br>
  It contains the spawn position and rotaion of the station, the parameters are almost exactly the same as normal keys.<br>
  It has 2 extra parameters for enabling the <Image IDs> and <Animation> sections. (Value is 1 or 0)<br>
    
@@ -130,7 +131,10 @@ Now with placeholders:
 About PPU: [^PPU]
       
 **Section 3: Blocks**
-Block in station keys compared to [normal vehicle keys](#_d_og_block) are similar, yet very different.
+Block in station keys compared to [normal vehicle keys](#_d_og_block) are similar, yet very different.<br>
+      <pre><code>Core;&lt;posX&gt;~&lt;posY&gt;;<a href="#_d_og_block:paint">&lt;Paint&gt;]</a>(;&lt;Image ID&gt;;&lt;Control ID&gt;;&lt;Animation ID&gt;):</code></pre>
+
+    WIP...
 
 [^PPU]: PPU is Pixels Per Unit, ingame, a unit is usually a block, a 1x1 block is 16x16 pixels.
       If you want to fit a 512x512 image in one block, set the PPU to 512.
