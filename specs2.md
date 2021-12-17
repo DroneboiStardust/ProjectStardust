@@ -48,17 +48,17 @@ The first 2 sections are meta sections
 <a name="_d_og_block"></a>
 Then all the sections after that are blocks, step 1: dissect a block
 `Core;0~0;0;0;-1;0;0;0:` This is the core block, this will be the example <a name="_d_og_block_example"></a>
-1. `Core` is the name of the block<br><a name="_d_og_block:name"></a>
+1. `Core` is the name of the block<br><a name="_d_og_block-name"></a>
    (Note: `;` is the seperator for block data)
-2. `0~0` is the position of the block relative to the middle of the grid (negative values are valid), but this doesn't really matter right now<a name="_d_og_block:pos"></a>
-3. After the postion is `0`, the rotation, which you don't need to change unless you're doing special rotations with keyediting <a name="_d_og_block:rotation"></a>
-4. Another `0`, this time, its kinda special, its value is normally `0` for blocks.<a name="_d_og_block:power/firing_group"></a><br>
+2. `0~0` is the position of the block relative to the middle of the grid (negative values are valid), but this doesn't really matter right now<a name="_d_og_block-pos"></a>
+3. After the postion is `0`, the rotation, which you don't need to change unless you're doing special rotations with keyediting <a name="_d_og_block-rotation"></a>
+4. Another `0`, this time, its kinda special, its value is normally `0` for blocks.<a name="_d_og_block-power/firing_group"></a><br>
    On weapons, if the value is `0`, it means that it is triggered by the primary firing group; if it is `1`, it means that it is triggered by the secondary firing group.<br>
    On thrusters or momentum wheels, it indicated the power (thrust/force) of the block.
-5. `-1` is the control group variable, for normal blocks, its value is `-1`.<a name="_d_og_block:control_group"></a><br>
+5. `-1` is the control group variable, for normal blocks, its value is `-1`.<a name="_d_og_block-control_group"></a><br>
    For weapons, thrusters or momentum wheels (or just anything that uses control groups), the value is defaulted to `01234`, which indicates the control groups 1,2,3,4,5 can all activate the block.<br>
    So, for example if the block can be activated using 1,2,5 control groups, the value will be `014`.
-6. Paint <a name="_d_og_block:paint"></a>
+6. Paint <a name="_d_og_block-paint"></a>
    ```
    White: 0
    Black: 1
@@ -76,9 +76,9 @@ Then all the sections after that are blocks, step 1: dissect a block
    Brown Wood: 13
    White Crate: 14 
    ```
-7. Thruster input direction, normally 0.  <a name="_d_og_block:input_direction"></a><br>
+7. Thruster input direction, normally 0.  <a name="_d_og_block-input_direction"></a><br>
    Auto=0,Up=1,Down=2,Left=3,Right=4
-8. Flip, normally `0`, `1` when flipped.<a name="_d_og_block:flip"></a><br>
+8. Flip, normally `0`, `1` when flipped.<a name="_d_og_block-flip"></a><br>
    Only the "Medium Crate" and "T1 Wedge 1x2" support the flipped value. All others' values are still 0 when flip is activated since there is no differnece betweem the flipped and unflipped versions.
 
 ### Station keys (CONCEPT)<a name="_s_key"></a>
@@ -133,7 +133,7 @@ About PPU: [^PPU]
 **Section 3: Blocks**
 Block in station keys compared to [normal vehicle keys](#_d_og_block) are similar, yet very different.<br>
       <pre><code>Core;&lt;posX&gt;~&lt;posY&gt;;&lt;Paint&gt;(;&lt;Image ID&gt;;&lt;Control ID&gt;;&lt;Animation ID&gt;):</code></pre>
-Links: [posX/Y](#_d_og_block:pos) [Paint](#_d_og_block:paint)
+Links: [posX/Y](#_d_og_block-pos) [Paint](#_d_og_block-paint)
     WIP...
 
 [^PPU]: PPU is Pixels Per Unit, ingame, a unit is usually a block, a 1x1 block is 16x16 pixels.
