@@ -105,5 +105,29 @@ Here is a concept of a **station key**:
    
    
  **Section 2: Image IDs**
- This section is optional according to the header
- 
+ This section is optional according to the header.
+ It is a json string
+ Example of 2 images:
+ ```json
+ {"sus":["https://cdn.jsdelivr.net/gh/DroneboiVested/ProjectStardust@main/sus2.dds",16],"example":["https://cdn.example.com/example.dds",32]}
+ ```
+Now there are 2 valid image IDs, "sus" and "example".
+   
+Extract 1 image from the dictionary, this will be the example of a single image.
+```json
+"sus":[
+   "https://cdn.jsdelivr.net/gh/DroneboiVested/ProjectStardust@main/sus2.dds",
+   16,
+  ]
+```
+Now with placeholders:
+```
+<string ID>:[
+   <string URL>,
+   <number PPU>
+]
+```[^PPU]
+
+[^PPU]: PPU is Pixels Per Unit, ingame, a unit is usually a block, a 1x1 block is 16x16 pixels.
+      If you want to fit a 512x512 image in one block, set the PPU to 512.
+      It only resizes your image so you should be fine if you wanted a 32x32 image on a Station Block (2x2) and set the PPU to 16
