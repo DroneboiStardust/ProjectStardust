@@ -8,7 +8,7 @@ d -> dissected
 # Specifications
 
 ### Basics
-So here is the original key of the Droneboi ship:
+Here is the original key of the Droneboi ship:
 <a name="_og_key"></a>
 ```
 UGxheWVyVmVoaWNsZTswfjA7MHwxMnxDb3JlOzB+MDswOzA7LTE7MDswOzA6VDEgV2VkZ2U7MX4xOzA7MDstMTswOzA7MDpUMSBXZWRnZTstMX4xOzkwOzA7LTE7MDswOzA6U2ltcGxlIFRocnVzdGVyOy0xfi0yOzA7MTUwOzA7NjswOzA6U2ltcGxlIFRocnVzdGVyOzF+LTI7MDsxNTA7MDs2OzA7MDpNb21lbnR1bSBXaGVlbDswfjE7MDsxMDA7MDs2OzA7MDpDb25uZWN0b3I7MH4yOzA7MDstMTswOzA7MDpTbWFsbCBCYXR0ZXJ5Oy0xfjA7MDswOy0xOzg7MDswOlNtYWxsIEJhdHRlcnk7MX4wOzA7MDstMTs4OzA7MDpTbWFsbCBGdWVsIFRhbms7LTF+LTE7MDswOy0xOzExOzA7MDpTbWFsbCBGdWVsIFRhbms7MX4tMTswOzA7LTE7MTE7MDswOlQxIEJsb2NrOzB+LTE7MDswOy0xOzA7MDswOg==
@@ -21,7 +21,7 @@ PlayerVehicle;0~0;0|12|Core;0~0;0;0;-1;0;0;0:T1 Wedge;1~1;0;0;-1;0;0;0:T1 Wedge;
 **All "keys" mentioned here are already decoded.**
 
 <a name="_d_og_key"></a>
-Let's split the key up into its individual blocks
+Split the key up into its individual blocks
 ```
 PlayerVehicle;0~0;0|
 12|
